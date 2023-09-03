@@ -9,6 +9,9 @@ import WarmUpSection from "./components/WarmUpSection";
 import SkinSection from "./components/SkinSection";
 import PostPooSection from "./components/PostPooSection";
 import DomesticSection from "./components/DomesticSection";
+import StoreSection from "./components/StoreSection";
+import Quote from "./components/Quote";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -48,8 +51,17 @@ function App() {
       <DomesticSection />
       {/* domestic section */}
 
-      {/* <UncontrolledExample />
-      <Button>Hello</Button> */}
+      {/* store */}
+      <StoreSection />
+      {/* store */}
+
+      {/* quote */}
+      <Quote />
+      {/* quote */}
+
+      {/* footer */}
+      <Footer />
+      {/* footer */}
     </>
   );
 }
