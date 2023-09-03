@@ -4,9 +4,11 @@ import AlertBanner from "./components/AlertBanner";
 import ShippingBanner from "./components/ShippingBanner";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-// import Test from "./components/Carousel";
-// import Button from "react-bootstrap/Button";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import BodyCareSection from "./components/BodyCareSection";
+import WarmUpSection from "./components/WarmUpSection";
+import SkinSection from "./components/SkinSection";
+import PostPooSection from "./components/PostPooSection";
+import DomesticSection from "./components/DomesticSection";
 
 function App() {
   return (
@@ -27,15 +29,26 @@ function App() {
 
       {/* for the body */}
 
-      {/* <section className="body-soap-section">
-        <div className="body-soap-text-container">
-
-        </div>
-        .
-      </section> */}
+      <BodyCareSection />
       {/* for the body */}
-      {/* <h1>Hello</h1>
-      <UncontrolledExample />
+
+      {/* warm */}
+      <WarmUpSection />
+      {/* warm */}
+
+      {/* skin */}
+      <SkinSection />
+      {/* skin */}
+
+      {/* post-poo */}
+      <PostPooSection />
+      {/* post-poo */}
+
+      {/* domestic section */}
+      <DomesticSection />
+      {/* domestic section */}
+
+      {/* <UncontrolledExample />
       <Button>Hello</Button> */}
     </>
   );

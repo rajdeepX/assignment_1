@@ -1,79 +1,43 @@
-// import { useState } from "react";
-// import Carousel from "react-bootstrap/Carousel";
-// // import ExampleCarouselImage from "components/ExampleCarouselImage";
-// import soap1 from "../assets/images/soap1.png";
-// import soap2 from "../assets/images/soap2.png";
-// import soap3 from "../assets/images/soap3.png";
+import { useState } from "react";
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 
-// function ControlledCarousel() {
-//   return (
-//     <Carousel interval={null} wrap={false} className="slider-container">
-//       <Carousel.Item className="slider-item">
-//         <div className="img-slider">
-//           <img src={soap1} alt="img" className="slider-img" />
-//         </div>
-//         <div>
-//           <h3>First slide label</h3>
-//           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-//         </div>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <div className="img-slider">
-//           <img src={soap2} alt="img" />
-//         </div>
-//         <div>
-//           <h3>Second slide label</h3>
-//           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//         </div>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <div className="img-slider">
-//           <img src={soap3} alt="img" />
-//         </div>
-//         <div>
-//           <h3>Third slide label</h3>
-//           <p>
-//             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-//           </p>
-//         </div>
-//       </Carousel.Item>
-//     </Carousel>
-//   );
-// }
+const Carousel = ({ slides }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-// export default ControlledCarousel;
+  const previous = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? currentIndex : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+  const next = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? currentIndex : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
 
-// import Carousel from "react-bootstrap/Carousel";
-// import ExampleCarouselImage from "components/ExampleCarouselImage";
+  const img = slides[currentIndex].img;
+  const title = slides[currentIndex].title;
+  const info = slides[currentIndex].info;
 
-// function UncontrolledExample() {
-//   return (
-//     <Carousel>
-//       <Carousel.Item>
-//         <ExampleCarouselImage text="First slide" />
-//         <Carousel.Caption>
-//           <h3>First slide label</h3>
-//           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <ExampleCarouselImage text="Second slide" />
-//         <Carousel.Caption>
-//           <h3>Second slide label</h3>
-//           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//       <Carousel.Item>
-//         <ExampleCarouselImage text="Third slide" />
-//         <Carousel.Caption>
-//           <h3>Third slide label</h3>
-//           <p>
-//             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-//           </p>
-//         </Carousel.Caption>
-//       </Carousel.Item>
-//     </Carousel>
-//   );
-// }
+  return (
+    <div className="slider-main-container">
+      <div className="slider-left-arrow" onClick={previous}>
+        <RiArrowLeftSLine />
+      </div>
+      <div className="slider-right-arrow" onClick={next}>
+        <RiArrowRightSLine />
+      </div>
+      <div className="slide-container">
+        <div className="slide-img-container">
+          <img src={img} alt="img" />
+        </div>
+        <div className="slide-text-container">
+          <p className="slide-info-head">{title}</p>
+          <p className="slide-info-text">{info}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-// export default UncontrolledExample;
+export default Carousel;
