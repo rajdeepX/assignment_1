@@ -2,7 +2,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 const WarmUpSection = () => {
   return (
-    <section className="body-soap-section">
+    <section className="warmup-section">
       <div className="body-soap-text-container warmup">
         <div className="for-head-text">
           <p className="warmup-body">The Athenaeum</p>

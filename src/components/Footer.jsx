@@ -85,7 +85,7 @@ const Footer = () => {
           <p>繁體中文</p>
         </div>
 
-        <div className="order-support">
+        <div className="order-support sus">
           <p className="sub-head">Sustainability</p>
           <hr className="footer-hr" />
 
@@ -106,6 +106,41 @@ const Footer = () => {
           <p>Privacy Policy</p>
           <p>Accessibility</p>
           <p>Cookie Policy</p>
+        </div>
+
+        <div className="order-support social-links">
+          <p className="sub-head">Social media</p>
+          <hr className="footer-hr" />
+          <p>
+            Instagram{" "}
+            <span className="order-arrow">
+              <FiArrowUpRight />
+            </span>
+          </p>
+          <p>
+            Twitter{" "}
+            <span className="order-arrow">
+              <FiArrowUpRight />
+            </span>
+          </p>
+          <p>
+            LinkedIn{" "}
+            <span className="order-arrow">
+              <FiArrowUpRight />
+            </span>
+          </p>
+          <p>
+            WeChat{" "}
+            <span className="order-arrow">
+              <FiArrowUpRight />
+            </span>
+          </p>
+          <p>
+            Weibo{" "}
+            <span className="order-arrow">
+              <FiArrowUpRight />
+            </span>
+          </p>
         </div>
       </div>
 

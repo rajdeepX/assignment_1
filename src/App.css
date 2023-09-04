@@ -1,3 +1,7 @@
+body {
+  background-color: #fffef2;
+}
+
 .alert-banner {
   padding: 10px 20px;
   background-color: #c2c2af;
@@ -238,6 +242,12 @@ nav {
   .order-line-height {
     line-height: 25px;
   }
+  .store-soap-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: #fffef2;
+  }
 }
 
 /* Show the hero-text-container on mobile */
@@ -247,6 +257,13 @@ nav {
   }
   .global-nav-container {
     height: 0;
+  }
+  .bar-soap {
+    font-size: 14px;
+    margin-bottom: 27px;
+  }
+  .social-links {
+    display: none;
   }
 }
 
@@ -399,6 +416,31 @@ nav {
   .order-line-height {
     line-height: 25px;
   }
+  .body-soap-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: #fffef2;
+  }
+  .post-poo-section {
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem; */
+    background-color: #fffef2;
+  }
+  .poo-img-container {
+    margin-bottom: 50px;
+  }
+  .warmup-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: #fffef2;
+  }
+  .warm-img-container {
+    padding-left: 20px;
+    margin-top: -50px;
+  }
 }
 
 /* Show the hero-md-text-container on tablet and larger screens */
@@ -406,10 +448,117 @@ nav {
   .hero-md-text-container {
     display: block;
   }
+  .global-nav-items {
+    display: none;
+  }
 }
 
-.global-nav-items {
-  display: none;
+@media screen and (min-width: 1025px) {
+  .global-nav-container {
+    height: 90px;
+  }
+  .global-nav-items {
+    display: flex;
+    gap: 1rem;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+  .global-nav-items svg {
+    font-size: 20px;
+  }
+  .shop-container {
+    display: none;
+  }
+
+  .hero-md-main-container {
+    padding: 20px 30px;
+    width: 42%;
+  }
+  .hero-md-main-container img {
+    width: 120px;
+  }
+  .body-soap-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: -100px;
+    padding: 30px 80px;
+  }
+  .warmup-section {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    background-color: #fffef2;
+    justify-content: center;
+    align-items: center;
+  }
+  .warmup {
+    margin-top: -200px;
+    width: 100%;
+  }
+
+  .warm-img-container {
+    margin-top: 50px;
+  }
+  .post-poo-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+  }
+  .poo-img-container {
+    width: 100%;
+  }
+  .poo-text-container {
+    width: 65%;
+  }
+  .warm-readmore {
+    width: 100%;
+  }
+
+  .store-soap-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    /* margin-bottom: 100px; */
+  }
+
+  .store-text-container {
+    margin-top: 70px;
+    width: 65%;
+  }
+
+  .quote-container {
+    width: 70%;
+    margin: 100px auto;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr;
+    padding: 50px 40px px;
+  }
+  .subscribe {
+    grid-column: 1/3;
+  }
+  .sus {
+    grid-column: 1/3;
+  }
+  .social-links {
+    display: grid;
+  }
+
+  .socials a {
+    display: none;
+  }
+
+  .footer-bottom {
+    padding: 20px 50px;
+  }
 }
 
 .logo img {
@@ -490,18 +639,18 @@ picture img {
   display: flex;
 }
 
-.body-soap-section {
+/* .body-soap-section {
   display: flex;
   flex-direction: column;
   gap: 5rem;
   background-color: #fffef2;
-}
-.store-soap-section {
+} */
+/* .store-soap-section {
   display: flex;
   flex-direction: column;
   gap: 5rem;
   background-color: #fffef2;
-}
+} */
 
 .for-body {
   font-size: 14px;
@@ -621,16 +770,16 @@ picture img {
   font-size: 15px;
 }
 
-.warm-img-container {
+/* .warm-img-container {
   padding-left: 20px;
   margin-top: -50px;
-}
+} */
 
-.poo-img-container {
+/* .poo-img-container {
   padding-right: 20px;
   margin-top: 50px;
   margin-bottom: -100px;
-}
+} */
 
 .post-poo-info {
   font-size: 17px;
@@ -717,7 +866,7 @@ picture img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 30px 50px;
   border-top: 3px solid #fffef2;
 }
 

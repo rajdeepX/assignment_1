@@ -2,7 +2,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 const PostPooSection = () => {
   return (
-    <section className="body-soap-section">
+    <section className="post-poo-section">
       <div className="poo-img-container">
         <picture>
           <source
