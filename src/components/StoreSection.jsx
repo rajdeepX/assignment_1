@@ -23,11 +23,11 @@ const slides = [
 
 const StoreSection = () => {
   return (
-    <section className="body-soap-section">
-      <div className="body-soap-text-container">
+    <section className="store-soap-section">
+      <div className="store-text-container">
         <div className="for-head-text">
           {/* <p className="for-body"></p> */}
-          <p className="for-care">Store locator</p>
+          <p className="store-care">Store locator</p>
         </div>
         <div className="for-info-text">
           <p className="for-info-detail post-poo-info">

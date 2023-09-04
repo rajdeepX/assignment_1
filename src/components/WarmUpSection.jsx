@@ -3,13 +3,13 @@ import { BsArrowRightShort } from "react-icons/bs";
 const WarmUpSection = () => {
   return (
     <section className="body-soap-section">
-      <div className="body-soap-text-container">
+      <div className="body-soap-text-container warmup">
         <div className="for-head-text">
-          <p className="for-body">The Athenaeum</p>
+          <p className="warmup-body">The Athenaeum</p>
           <p className="for-care">The warm-up</p>
         </div>
         <div className="for-info-text">
-          <p className="for-info-detail">
+          <p className="warmup-detail">
             In The Athenaeum, our digital reading room: a guide to ensuring a
             healthy complexion through the warmer months.
           </p>

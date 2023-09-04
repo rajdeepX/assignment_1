@@ -1,4 +1,3 @@
-import React from "react";
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
 
 const GlobalNav = () => {

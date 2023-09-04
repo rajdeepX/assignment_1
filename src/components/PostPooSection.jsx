@@ -32,10 +32,10 @@ const PostPooSection = () => {
           />
         </picture>
       </div>
-      <div className="body-soap-text-container">
-        <div className="for-head-text">
+      <div className="poo-text-container">
+        <div className="poo-head-text">
           {/* <p className="for-body"></p> */}
-          <p className="for-care">Post-Poo Drops has returned</p>
+          <p className="poo-care">Post-Poo Drops has returned</p>
         </div>
         <div className="for-info-text">
           <p className="for-info-detail post-poo-info">
