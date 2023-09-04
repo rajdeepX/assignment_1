@@ -427,6 +427,7 @@ nav {
     flex-direction: column;
     /* gap: 3rem; */
     background-color: #fffef2;
+    margin-top: 100px;
   }
   .poo-img-container {
     margin-bottom: 50px;
