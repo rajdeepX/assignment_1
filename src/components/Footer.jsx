@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { BsArrowRightShort } from "react-icons/bs";
 import { FiArrowUpRight } from "react-icons/fi";

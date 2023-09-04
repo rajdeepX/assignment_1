@@ -1,4 +1,5 @@
 import { BsArrowRightShort } from "react-icons/bs";
+import logo from "../assets/images/logo-white.svg";
 
 const Hero = () => {
   return (
@@ -46,6 +47,29 @@ const Hero = () => {
                   <BsArrowRightShort />
                 </span>
               </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero-md-text-container">
+          <div className="hero-md-main-container">
+            <img src={logo} alt="logo" />
+            <div className="hero-main-text">
+              <p className="bar-soap">Bar Soaps</p>
+              <p className="hero-text">A body care classic, reimagined</p>
+              <p className="hero-info">
+                Breathing new life into the humble bar soap are Nurture, Polish
+                and Refresh—three additions to the range, each imparting a
+                unique constellation of benefits.
+              </p>
+              <div className="hero-md-discover">
+                <p className="dis-text">
+                  Discover Bar Soaps{" "}
+                  <span className="arrow">
+                    <BsArrowRightShort />
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>

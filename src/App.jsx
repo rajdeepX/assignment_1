@@ -12,6 +12,7 @@ import DomesticSection from "./components/DomesticSection";
 import StoreSection from "./components/StoreSection";
 import Quote from "./components/Quote";
 import Footer from "./components/Footer";
+import GlobalNav from "./components/GlobalNav";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
 
       <Navbar />
       {/* smol navbar */}
+
+      {/* large navbar */}
+      <GlobalNav />
+      {/* large navbar */}
 
       {/* hero */}
 
